@@ -1,103 +1,217 @@
-import Image from "next/image";
+import Link from "next/link"
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import TestimonialSlider from "@/components/testimonial-slider"
+import DestinationGallery from "@/components/destination-gallery"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      {/* Hero Section */}
+      <section className="relative h-[80vh] min-h-[600px] w-full">
+        <div className="absolute inset-0">
+          <Image
+            src="/placeholder.svg?height=1080&width=1920"
+            alt="Safari in Kenya"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="container relative h-full flex flex-col justify-center items-start text-white">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 max-w-2xl">
+            Experience Kenya with Premium Chauffeur-Driven Safaris
+          </h1>
+          <p className="text-lg md:text-xl mb-8 max-w-xl">
+            Discover the beauty of Kenya with our experienced drivers and comfortable vehicles. Tailored tours for any
+            duration.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
+              <Link href="/contact">Book Your Safari Today</Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="bg-transparent border-white text-white hover:bg-white/10"
+            >
+              <Link href="/services">Explore Our Fleet</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Introduction Section */}
+      <section className="py-16 bg-amber-50">
+        <div className="container">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold mb-6 text-amber-900">Welcome to 888 Safaris</h2>
+              <p className="mb-4 text-gray-700">
+                At 888 Safaris, we specialize in providing premium chauffeur-driven vehicle services across Kenya. Our
+                fleet of well-maintained vehicles and team of highly experienced drivers ensure a comfortable, safe, and
+                memorable journey through Kenya's breathtaking landscapes.
+              </p>
+              <p className="mb-6 text-gray-700">
+                Whether you're planning a wildlife safari, a coastal retreat, or a business trip, our flexible booking
+                options cater to your specific needs and preferences.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <div className="flex items-center gap-2">
+                  <div className="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center">
+                    <span className="text-amber-800 font-bold">5+</span>
+                  </div>
+                  <span className="text-gray-700">Years Driver Experience</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center">
+                    <span className="text-amber-800 font-bold">100%</span>
+                  </div>
+                  <span className="text-gray-700">Certified Drivers</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-12 h-12 rounded-full bg-amber-200 flex items-center justify-center">
+                    <span className="text-amber-800 font-bold">24/7</span>
+                  </div>
+                  <span className="text-gray-700">Customer Support</span>
+                </div>
+              </div>
+            </div>
+            <div className="relative h-[400px] rounded-lg overflow-hidden">
+              <Image src="/placeholder.svg?height=800&width=600" alt="Safari Vehicle" fill className="object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Services Preview */}
+      <section className="py-16">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-amber-900">Our Premium Fleet</h2>
+            <p className="max-w-2xl mx-auto text-gray-700">
+              Choose from our selection of comfortable and well-maintained vehicles, all driven by our professional
+              chauffeurs with a minimum of 5 years of experience.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Vehicle 1 */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
+              <div className="relative h-48">
+                <Image src="/placeholder.svg?height=400&width=600" alt="Safari Van" fill className="object-cover" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2 text-amber-800">Safari Vans</h3>
+                <p className="text-gray-700 mb-4">
+                  Comfortable 7-seater vans with pop-up roofs, perfect for wildlife viewing and group travel across
+                  Kenya.
+                </p>
+                <Button asChild variant="outline" className="w-full border-amber-700 text-amber-700 hover:bg-amber-50">
+                  <Link href="/services">Learn More</Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Vehicle 2 */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
+              <div className="relative h-48">
+                <Image src="/placeholder.svg?height=400&width=600" alt="Mini Van" fill className="object-cover" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2 text-amber-800">Mini Vans</h3>
+                <p className="text-gray-700 mb-4">
+                  Spacious mini vans ideal for family trips and small groups, offering comfort for both short and long
+                  journeys.
+                </p>
+                <Button asChild variant="outline" className="w-full border-amber-700 text-amber-700 hover:bg-amber-50">
+                  <Link href="/services">Learn More</Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Vehicle 3 */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
+              <div className="relative h-48">
+                <Image src="/placeholder.svg?height=400&width=600" alt="Executive Car" fill className="object-cover" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2 text-amber-800">Executive Cars</h3>
+                <p className="text-gray-700 mb-4">
+                  Luxury vehicles like the Prado TX, offering premium comfort and style for executive travel and VIP
+                  tours.
+                </p>
+                <Button asChild variant="outline" className="w-full border-amber-700 text-amber-700 hover:bg-amber-50">
+                  <Link href="/services">Learn More</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button asChild className="bg-amber-700 hover:bg-amber-800">
+              <Link href="/services">View All Services</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-16 bg-amber-100">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-amber-900">What Our Clients Say</h2>
+            <p className="max-w-2xl mx-auto text-gray-700">
+              Hear from travelers who have experienced Kenya with our chauffeur-driven services.
+            </p>
+          </div>
+
+          <TestimonialSlider />
+        </div>
+      </section>
+
+      {/* Popular Destinations */}
+      <section className="py-16">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-amber-900">Popular Destinations</h2>
+            <p className="max-w-2xl mx-auto text-gray-700">
+              Explore Kenya's most breathtaking locations with our chauffeur-driven tours.
+            </p>
+          </div>
+
+          <DestinationGallery />
+
+          <div className="text-center mt-12">
+            <Button asChild className="bg-amber-700 hover:bg-amber-800">
+              <Link href="/contact">Plan Your Journey</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-amber-900 text-white">
+        <div className="container">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-3xl font-bold mb-4">Ready to Explore Kenya?</h2>
+              <p className="mb-6">
+                Contact us today to book your chauffeur-driven safari and experience Kenya's beauty with comfort and
+                style.
+              </p>
+              <Button asChild size="lg" className="bg-white text-amber-900 hover:bg-amber-100">
+                <Link href="/contact">Book Your Safari</Link>
+              </Button>
+            </div>
+            <div className="relative h-[300px] rounded-lg overflow-hidden">
+              <Image src="/placeholder.svg?height=600&width=800" alt="Kenya Landscape" fill className="object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  );
+  )
 }
