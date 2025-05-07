@@ -20,6 +20,10 @@ const config = {
     },
     extend: {
       colors: {
+        brown: '#3C2F2F',
+        green: '#4A7043',
+        sand: '#D4A017',
+        ivory: '#F5F5F5',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
