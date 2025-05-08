@@ -13,14 +13,6 @@ import DestinationGallery from "@/components/destination-gallery"
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="Kenya Safaris, Chauffeur-Driven Tours, Safari Vehicles, 888 Safaris" />
-        <meta name="author" content="888 Safaris" />
-      </Head>
       <div className="bg-amber-50 flex justify-center items-center min-h-screen">
         <div className="w-full">
           {/* Hero Section */}
@@ -230,6 +222,5 @@ export default function Home() {
           </section>
         </div>
       </div>
-    </>
   )
 }
