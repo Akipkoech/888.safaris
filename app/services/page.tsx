@@ -14,16 +14,19 @@ export const metadata = {
     return (
       <div className="bg-amber-50">
         {/* Hero Section */}
-        <section className="relative h-[50vh] min-h-[400px] w-full">
+        <section className="relative h-[60vh] min-h-[400px] w-full">
           <div className="absolute inset-0">
             <Image
-              src="/placeholder.svg?height=800&width=1600"
+              src="/images/fleet.jpg"
               alt="Our Services"
               fill
-              className="object-cover"
+              className="object-cover object-center"
               priority
+              quality={100}
+              sizes="100vw"
+              style={{ transform: 'translate3d(0, 0, 0)' }}
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-amber-600/40" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-amber-600/50" />
           </div>
           <div className="container relative h-full flex flex-col justify-center items-center text-center text-amber-50 max-w-5xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold font-serif mb-4">Our Services</h1>
@@ -48,21 +51,17 @@ export const metadata = {
             {/* Safari Van */}
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16 max-w-5xl mx-auto">
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-sm">
-                <Image src="/placeholder.svg?height=800&width=600" alt="Safari Van" fill className="object-cover" />
+                <Image src="/images/Safari Van.jpg" alt="Safari Van" fill className="object-cover" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold font-serif mb-4 text-amber-800">Safari Vans</h3>
                 <p className="mb-6 text-gray-700 font-sans">
-                  Our safari vans are specially designed for wildlife viewing and comfortable travel across Kenya's diverse terrains. With pop-up roofs for unobstructed game viewing and spacious interiors, these vehicles are perfect for small groups and families.
+                  Our safari vans are specially designed for comfortable travel across Kenya's diverse terrain and spacious interiors, these vehicles are perfect for small groups and families.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                   <div className="flex items-start gap-2">
                     <Check className="text-amber-600 mt-1 flex-shrink-0" size={18} />
-                    <span className="text-gray-700 font-sans">Seating for 7 passengers</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <Check className="text-amber-600 mt-1 flex-shrink-0" size={18} />
-                    <span className="text-gray-700 font-sans">Pop-up roof for game viewing</span>
+                    <span className="text-gray-700 font-sans">Seating for 14-16 passengers</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <Check className="text-amber-600 mt-1 flex-shrink-0" size={18} />
@@ -70,7 +69,7 @@ export const metadata = {
                   </div>
                   <div className="flex items-start gap-2">
                     <Check className="text-amber-600 mt-1 flex-shrink-0" size={18} />
-                    <span className="text-gray-700 font-sans">Comfortable seating</span>
+                    <span className="text-gray-700 font-sans">Comfortable reclining seats</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <Check className="text-amber-600 mt-1 flex-shrink-0" size={18} />
@@ -79,6 +78,10 @@ export const metadata = {
                   <div className="flex items-start gap-2">
                     <Check className="text-amber-600 mt-1 flex-shrink-0" size={18} />
                     <span className="text-gray-700 font-sans">4x4 capability</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Check className="text-amber-600 mt-1 flex-shrink-0" size={18} />
+                    <span className="text-gray-700 font-sans">Entertainment system</span>
                   </div>
                 </div>
                 <div className="p-4 bg-amber-50 rounded-lg mb-6">
@@ -93,7 +96,7 @@ export const metadata = {
             {/* Mini Van */}
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16 max-w-5xl mx-auto">
               <div className="order-1 md:order-2 relative h-[400px] rounded-lg overflow-hidden shadow-sm">
-                <Image src="/placeholder.svg?height=800&width=600" alt="Mini Van" fill className="object-cover" />
+                <Image src="/images/Minivan.jpg" alt="Mini Van" fill className="object-cover" />
               </div>
               <div className="order-2 md:order-1">
                 <h3 className="text-2xl font-bold font-serif mb-4 text-amber-800">Mini Vans</h3>
@@ -103,7 +106,7 @@ export const metadata = {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                   <div className="flex items-start gap-2">
                     <Check className="text-amber-600 mt-1 flex-shrink-0" size={18} />
-                    <span className="text-gray-700 font-sans">Seating for 8 passengers</span>
+                    <span className="text-gray-700 font-sans">Seating for 6 passengers</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <Check className="text-amber-600 mt-1 flex-shrink-0" size={18} />
@@ -138,17 +141,17 @@ export const metadata = {
             {/* Executive Cars */}
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-sm">
-                <Image src="/placeholder.svg?height=800&width=600" alt="Executive Car" fill className="object-cover" />
+                <Image src="/images/executive.jpeg" alt="Executive Car" fill className="object-cover" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold font-serif mb-4 text-amber-800">Executive Cars</h3>
                 <p className="mb-6 text-gray-700 font-sans">
-                  Our luxury executive cars, including the prestigious Prado TX, offer the ultimate in comfort and style. Perfect for business travel, VIP tours, or travelers seeking a premium experience while exploring Kenya.
+                  Our luxury executive cars offer the ultimate in comfort and style. Perfect for business travel, Airport Transfer, or travelers seeking a premium experience while exploring Kenya.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                   <div className="flex items-start gap-2">
                     <Check className="text-amber-600 mt-1 flex-shrink-0" size={18} />
-                    <span className="text-gray-700 font-sans">Luxury seating for 4-6 passengers</span>
+                    <span className="text-gray-700 font-sans">Luxury seating for 3-4 passengers</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <Check className="text-amber-600 mt-1 flex-shrink-0" size={18} />
@@ -172,7 +175,7 @@ export const metadata = {
                   </div>
                 </div>
                 <div className="p-4 bg-amber-50 rounded-lg mb-6">
-                  <p className="font-medium text-amber-800 font-sans">Ideal for: Business travel, VIP tours, luxury safaris</p>
+                  <p className="font-medium text-amber-800 font-sans">Ideal for: Business travel, VIP tours, luxury safaris, Airport Transfer</p>
                 </div>
                 <Button asChild className="bg-gradient-to-r from-amber-700 to-amber-400 text-amber-900 font-bold hover:from-amber-400 hover:to-amber-700 transition-all duration-300 rounded-md font-sans">
                   <Link href="/contact">Book an Executive Car</Link>
