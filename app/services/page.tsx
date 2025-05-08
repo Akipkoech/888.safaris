@@ -437,7 +437,7 @@ export const metadata = {
         </section>
   
         {/* CTA Section */}
-        <section className="py-16 bg-gradient-to-r from-black to-amber-600 text-amber-50">
+        <section className="py-16 bg-black text-white">
           <div className="container flex flex-col items-center text-center">
             <h2 className="text-3xl font-bold font-serif mb-6 flex items-center justify-center gap-2">
               <Car className="w-8 h-8 text-amber-400" /> Ready to Book Your Kenyan Adventure?
