@@ -24,7 +24,6 @@ export default function Home() {
               preload="auto"
               poster="/images/logo.png"
               className="hero-video object-cover w-full h-full"
-              style={{ willChange: 'transform' }}
             >
               <source src="/video/video.mp4" type="video/mp4" />
               <img src="/images/logo.png" alt="Safari in Kenya" />
@@ -112,12 +111,12 @@ export default function Home() {
               {/* Vehicle 1 */}
               <div className="bg-amber-50 rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
                 <div className="relative h-48">
-                  <Image src="/placeholder.svg?height=400&width=600" alt="Safari Van" fill className="object-cover" />
+                  <Image src="/images/safari.jpg" alt="Safari Van" fill className="object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold font-serif mb-2 text-amber-900">Safari Vans</h3>
                   <p className="text-gray-700 mb-4 font-sans">
-                    Comfortable 7-seater vans with pop-up roofs, perfect for wildlife viewing and group travel across Kenya.
+                    Comfortable 14-seater vans with pop-up roofs, perfect for wildlife viewing and group travel across Kenya.
                   </p>
                   <Button asChild variant="outline" className="w-full border-amber-700 text-amber-700 hover:bg-amber-100 font-sans">
                     <Link href="/services">Learn More</Link>
@@ -128,7 +127,7 @@ export default function Home() {
               {/* Vehicle 2 */}
               <div className="bg-amber-50 rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
                 <div className="relative h-48">
-                  <Image src="/placeholder.svg?height=400&width=600" alt="Mini Van" fill className="object-cover" />
+                  <Image src="/images/mini.jpg" alt="Mini Van" fill className="object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold font-serif mb-2 text-amber-900">Mini Vans</h3>
@@ -144,12 +143,12 @@ export default function Home() {
               {/* Vehicle 3 */}
               <div className="bg-amber-50 rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105">
                 <div className="relative h-48">
-                  <Image src="/placeholder.svg?height=400&width=600" alt="Executive Car" fill className="object-cover" />
+                  <Image src="/images/exec.jpg" alt="Executive Car" fill className="object-cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold font-serif mb-2 text-amber-900">Executive Cars</h3>
                   <p className="text-gray-700 mb-4 font-sans">
-                    Luxury vehicles like the Prado TX, offering premium comfort and style for executive travel and VIP tours.
+                    Luxury vehicles  offering premium comfort and style for executive travel and VIP tours.
                   </p>
                   <Button asChild variant="outline" className="w-full border-amber-700 text-amber-700 hover:bg-amber-100 font-sans">
                     <Link href="/services">Learn More</Link>

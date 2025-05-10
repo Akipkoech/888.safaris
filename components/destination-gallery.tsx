@@ -4,37 +4,37 @@ const destinations = [
   {
     id: 1,
     name: "Maasai Mara",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/masai.jpg",
     description: "Experience the world-famous wildlife reserve",
   },
   {
     id: 2,
     name: "Amboseli National Park",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/Amboseli.jpg",
     description: "See elephants with Mt. Kilimanjaro as backdrop",
   },
   {
     id: 3,
     name: "Diani Beach",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/diani.jpg",
     description: "Relax on pristine white sand beaches",
   },
   {
     id: 4,
     name: "Lake Nakuru",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/lake-nakuru.jpg",
     description: "Witness thousands of flamingos and diverse wildlife",
   },
   {
     id: 5,
     name: "Mount Kenya",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/Mount-Kenya.jpg",
     description: "Explore Africa's second-highest mountain",
   },
   {
     id: 6,
     name: "Nairobi National Park",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/Nairobi park.jpg",
     description: "Safari experience right next to the capital city",
   },
 ]

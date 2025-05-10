@@ -59,39 +59,57 @@ export default function TestimonialSlider() {
   const handleMouseLeave = () => setIsAutoPlaying(true)
 
   return (
-    <div className="relative max-w-4xl mx-auto" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
-        <Quote className="text-amber-300 mb-6" size={48} />
+    <div
+      className="relative max-w-4xl mx-auto"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      role="region"
+      aria-live="polite"
+    >
+      <div className="bg-amber-50 rounded-lg shadow-lg p-8 md:p-12 border border-amber-200">
+        <Quote className="text-amber-300 mb-6 quote-gradient" size={48} />
 
         <div className="min-h-[200px]">
-          <p className="text-gray-700 italic mb-8 text-lg">"{testimonials[currentIndex].text}"</p>
+          <div
+            key={testimonials[currentIndex].id}
+            className="opacity-100 transition-opacity duration-500"
+          >
+            <p className="text-gray-700 italic mb-8 text-xl font-sans">
+              "{testimonials[currentIndex].text}"
+            </p>
 
-          <div className="flex items-center gap-4">
-            <div className="relative w-16 h-16 rounded-full overflow-hidden">
-              <Image
-                src={testimonials[currentIndex].image || "/placeholder.svg"}
-                alt={testimonials[currentIndex].name}
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div>
-              <h4 className="font-bold text-amber-900">{testimonials[currentIndex].name}</h4>
-              <p className="text-gray-600">{testimonials[currentIndex].location}</p>
+            <div className="flex items-center gap-4">
+              <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-amber-400">
+                <Image
+                  src={testimonials[currentIndex].image || "/placeholder.svg"}
+                  alt={testimonials[currentIndex].name}
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-amber-900 font-serif">
+                  {testimonials[currentIndex].name}
+                </h4>
+                <p className="text-gray-600 font-sans">
+                  {testimonials[currentIndex].location}
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="flex justify-center mt-6 gap-2">
+      <div className="flex justify-center mt-6 gap-4">
         <Button
           variant="outline"
           size="icon"
           onClick={prevSlide}
-          className="rounded-full border-amber-700 text-amber-700 hover:bg-amber-50"
+          className="rounded-full border-amber-700 text-amber-700 hover:bg-gradient-to-r hover:from-amber-700 hover:to-amber-400 hover:text-amber-50 w-12 h-12"
           aria-label="Previous testimonial"
         >
-          <ChevronLeft size={20} />
+          <ChevronLeft size={24} />
         </Button>
 
         <div className="flex gap-2 items-center">
@@ -99,7 +117,9 @@ export default function TestimonialSlider() {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full ${index === currentIndex ? "bg-amber-700" : "bg-amber-200"}`}
+              className={`w-4 h-4 rounded-full ${
+                index === currentIndex ? "bg-amber-600" : "bg-amber-200"
+              }`}
               aria-label={`Go to testimonial ${index + 1}`}
             />
           ))}
@@ -109,10 +129,10 @@ export default function TestimonialSlider() {
           variant="outline"
           size="icon"
           onClick={nextSlide}
-          className="rounded-full border-amber-700 text-amber-700 hover:bg-amber-50"
+          className="rounded-full border-amber-700 text-amber-700 hover:bg-gradient-to-r hover:from-amber-700 hover:to-amber-400 hover:text-amber-50 w-12 h-12"
           aria-label="Next testimonial"
         >
-          <ChevronRight size={20} />
+          <ChevronRight size={24} />
         </Button>
       </div>
     </div>
