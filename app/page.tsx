@@ -17,24 +17,18 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative h-[80vh] min-h-[600px] w-full">
           <div className="absolute inset-0 z-0">
-            <video
-              autoPlay
-              muted
-              playsInline
-              preload="auto"
-              poster="/images/logo.png"
-              className="hero-video object-cover w-full h-full"
-            >
-              <source src="/video/video.mp4" type="video/mp4" />
-              <img src="/images/logo.png" alt="Safari in Kenya" />
-            </video>
+            <img
+              src="/images/home page.jpg"
+              alt="Safari in Kenya"
+              className="object-cover w-full h-full"
+            />
             <div className="absolute inset-0" />
           </div>
           <div className="container relative z-10 h-full flex flex-col justify-center items-start text-left text-amber-500 max-w-5xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif mb-4 max-w-xl">
               Experience Kenya with Premium Chauffeur-Driven Safaris
             </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-xl font-sans text-amber-100">
+            <p className="text-lg md:text-xl mb-8 max-w-xl font-sans text-amber-300 font-semibold">
               Discover the beauty of Kenya with our experienced drivers and comfortable vehicles. Tailored tours for any duration.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -45,7 +39,7 @@ export default function Home() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="bg-transparent border-amber-50 text-amber-50 hover:bg-amber-50/10 font-sans font-medium"
+                className="bg-transparent border-amber-500 text-black hover:bg-amber-50/10 font-sans font-medium"
               >
                 <Link href="/services">Explore Our Fleet</Link>
               </Button>

@@ -17,7 +17,7 @@ export default function AboutPage() {
       <section className="relative h-[50vh] min-h-[400px] w-full">
         <div className="absolute inset-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="/images/about.jpg"
             alt="About 888 Safaris"
             fill
             className="object-cover"
@@ -27,7 +27,7 @@ export default function AboutPage() {
         </div>
         <div className="container relative h-full flex flex-col justify-center items-center text-center text-amber-50 max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold font-serif mb-4">About 888 Safaris</h1>
-          <p className="text-lg max-w-2xl font-sans text-amber-100">
+          <p className="text-lg max-w-2xl font-sans text-amber-200">
             Your trusted partner for premium chauffeur-driven tours across Kenya
           </p>
         </div>
