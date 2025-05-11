@@ -17,7 +17,7 @@ export const metadata = {
         <section className="relative h-[60vh] min-h-[400px] w-full">
           <div className="absolute inset-0">
             <Image
-              src="/images/fleet.jpg"
+              src="/images/services.jpg"
               alt="Our Services"
               fill
               className="object-cover object-center"

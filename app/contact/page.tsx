@@ -14,7 +14,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="relative h-[40vh] min-h-[300px] w-full">
         <div className="absolute inset-0">
-          <Image src="/placeholder.svg?height=600&width=1600" alt="Contact Us" fill className="object-cover" priority />
+          <Image src="/images/contact.jpg" alt="Contact Us" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-amber-600/40" />
         </div>
         <div className="container relative h-full flex flex-col justify-center items-center text-center text-amber-50 max-w-5xl mx-auto">
