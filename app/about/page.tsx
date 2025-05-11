@@ -38,7 +38,7 @@ export default function AboutPage() {
         <div className="container flex flex-col items-center">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-sm">
-              <Image src="/placeholder.svg?height=800&width=600" alt="Our Story" fill className="object-cover" />
+              <Image src="/images/ourstory.jpg" alt="Our Story" fill className="object-cover" />
             </div>
             <div>
               <h2 className="text-3xl font-bold font-serif mb-6 text-amber-900 flex items-center gap-2">
