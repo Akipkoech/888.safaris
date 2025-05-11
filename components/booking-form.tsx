@@ -83,7 +83,7 @@ export default function BookingForm() {
             <SelectContent>
               <SelectItem value="safari-van">Safari Van</SelectItem>
               <SelectItem value="mini-van">Mini Van</SelectItem>
-              <SelectItem value="executive-car">Executive Car (Prado TX)</SelectItem>
+              <SelectItem value="executive-car">Executive Car</SelectItem>
               <SelectItem value="not-sure">Not Sure (Please advise)</SelectItem>
             </SelectContent>
           </Select>
