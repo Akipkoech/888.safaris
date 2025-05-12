@@ -28,8 +28,8 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif mb-4 max-w-xl">
               Experience Kenya with Premium Chauffeur-Driven Safaris
             </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-xl font-sans text-amber-300 font-semibold">
-              Discover the beauty of Kenya with our experienced drivers and comfortable vehicles. Tailored tours for any duration.
+            <p className="text-lg md:text-xl mb-8 max-w-xl font-sans text-amber-300 font-medium leading-relaxed">
+              Tailored trips for all your needs—whether business or pleasure, we’ve got you covered with unmatched comfort and style.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-gradient-to-r from-amber-700 to-amber-400 text-amber-900 font-bold hover:from-amber-400 hover:to-amber-700 transition-all duration-300 rounded-md">
