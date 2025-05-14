@@ -252,7 +252,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-sm">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="/images/Safari Vehicle.jpg"
                 alt="Safari Experience"
                 fill
                 className="object-cover"

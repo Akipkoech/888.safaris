@@ -6,7 +6,7 @@ export const metadata = {
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { MapPin, Car, Users, Star } from "lucide-react"
+import { MapPin, Car, Star } from "lucide-react"
 import TestimonialSlider from "@/components/testimonial-slider"
 import DestinationGallery from "@/components/destination-gallery"
 
