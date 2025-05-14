@@ -12,34 +12,38 @@ import DestinationGallery from "@/components/destination-gallery"
 
 export default function Home() {
   return (
-    <div className=" flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-screen">
       <div className="w-full">
         {/* Hero Section */}
-        <section className="relative h-[80vh] min-h-[600px] w-full">
+        <section className="relative min-h-screen w-full flex items-center justify-center">
           <div className="absolute inset-0 z-0">
             <img
               src="/images/home page.jpg"
               alt="Safari in Kenya"
               className="object-cover w-full h-full"
             />
-            <div className="absolute inset-0" />
+            <div className="absolute inset-0 bg-black/40" /> 
           </div>
-          <div className="container relative z-10 h-full flex flex-col justify-center items-start text-left text-amber-500 max-w-5xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif mb-4 max-w-xl">
+          <div className="container relative z-10 flex h-full flex-col justify-center items-center text-center text-amber-50 max-w-4xl mx-auto py-20">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold font-serif mb-6 text-amber-500 animate-fadeIn">
               Experience Kenya with Premium Chauffeur-Driven Safaris
             </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-xl font-sans text-amber-300 font-medium leading-relaxed">
-              Tailored trips for all your needs—whether business or pleasure, we’ve got you covered with unmatched comfort and style.
+            <p className="text-base md:text-lg lg:text-xl mb-8 font-sans font-medium leading-relaxed text-amber-100 animate-fadeIn animation-delay-200">
+              Tailored trips for all your needs—whether business or pleasure, we've got you covered with unmatched comfort and style.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="bg-gradient-to-r from-amber-700 to-amber-400 text-amber-900 font-bold hover:from-amber-400 hover:to-amber-700 transition-all duration-300 rounded-md">
+            <div className="flex flex-col sm:flex-row gap-4 animate-fadeIn animation-delay-400">
+              <Button 
+                asChild 
+                size="lg" 
+                className="bg-gradient-to-r from-amber-300 to-sand text-brown font-bold hover:from-amber-200 hover:to-amber-400 hover:shadow-[0_0_15px_rgba(251,191,36,0.6)] transition-all duration-300 rounded-md"
+              >
                 <Link href="/contact">Book Your Safari Today</Link>
               </Button>
               <Button
                 asChild
                 size="lg"
                 variant="outline"
-                className="bg-transparent border-amber-500 text-black hover:bg-amber-50/10 font-sans font-medium"
+                className="bg-transparent border-amber-200 text-amber-50 hover:bg-amber-50/10 hover:text-amber-100 hover:shadow-[0_0_10px_rgba(255,251,235,0.4)] font-sans font-medium transition-all duration-300 rounded-md"
               >
                 <Link href="/services">Explore Our Fleet</Link>
               </Button>
@@ -93,9 +97,7 @@ export default function Home() {
         <section className="py-16 bg-amber-900 text-amber-50">
           <div className="container flex flex-col items-center">
             <div className="text-center mb-12 max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold font-serif mb-4 flex items-center justify-center gap-2">
-                <Car className="w-8 h-8 text-amber-400" /> Our Premium Fleet
-              </h2>
+              <h2 className="text-3xl font-bold font-serif mb-4">Our Premium Fleet</h2>
               <p className="text-amber-100 font-sans">
                 Choose from our selection of comfortable and well-maintained vehicles, all driven by our professional chauffeurs with a minimum of 5 years of experience.
               </p>
@@ -142,7 +144,7 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold font-serif mb-2 text-amber-900">Executive Cars</h3>
                   <p className="text-gray-700 mb-4 font-sans">
-                    Luxury vehicles  offering premium comfort and style for executive travel and VIP tours.
+                    Luxury vehicles offering premium comfort and style for executive travel and VIP tours.
                   </p>
                   <Button asChild variant="outline" className="w-full border-amber-700 text-amber-700 hover:bg-amber-100 font-sans">
                     <Link href="/services">Learn More</Link>
