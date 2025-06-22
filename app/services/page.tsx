@@ -202,7 +202,7 @@ export const metadata = {
               <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
                 <div className="relative h-48">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/images/masai.jpg"
                     alt="Nairobi to Maasai Mara"
                     fill
                     className="object-cover"
@@ -216,11 +216,11 @@ export const metadata = {
                   <div className="space-y-2 mb-6 font-sans">
                     <div className="flex justify-between">
                       <span className="text-gray-600">Safari Van:</span>
-                      <span className="font-medium">$450/day</span>
+                      <span className="font-medium">ksh 30,000/day</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Executive Car:</span>
-                      <span className="font-medium">$650/day</span>
+                      <span className="font-medium">ksh 10,000/day</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Duration:</span>
@@ -237,7 +237,7 @@ export const metadata = {
               <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
                 <div className="relative h-48">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/images/Amboseli.jpg"
                     alt="Nairobi to Amboseli"
                     fill
                     className="object-cover"
@@ -251,11 +251,11 @@ export const metadata = {
                   <div className="space-y-2 mb-6 font-sans">
                     <div className="flex justify-between">
                       <span className="text-gray-600">Safari Van:</span>
-                      <span className="font-medium">$400/day</span>
+                      <span className="font-medium">Ksh 15,000/day</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Executive Car:</span>
-                      <span className="font-medium">$600/day</span>
+                      <span className="font-medium">Ksh 20,000/day</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Duration:</span>
@@ -272,7 +272,7 @@ export const metadata = {
               <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
                 <div className="relative h-48">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/images/diani.jpg"
                     alt="Mombasa to Diani"
                     fill
                     className="object-cover"
@@ -286,11 +286,11 @@ export const metadata = {
                   <div className="space-y-2 mb-6 font-sans">
                     <div className="flex justify-between">
                       <span className="text-gray-600">Mini Van:</span>
-                      <span className="font-medium">$300/day</span>
+                      <span className="font-medium">Ksh 10,000/day</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Executive Car:</span>
-                      <span className="font-medium">$500/day</span>
+                      <span className="font-medium">Ksh 7,000/day</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Duration:</span>

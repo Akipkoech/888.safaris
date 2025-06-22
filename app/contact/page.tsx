@@ -34,8 +34,8 @@ export default function ContactPage() {
                 <Phone className="text-amber-700" size={24} />
               </div>
               <h3 className="text-xl font-bold font-serif mb-3 text-amber-800">Call Us</h3>
-              <p className="text-gray-700 mb-2 font-sans">+254 700 000 000</p>
-              <p className="text-gray-700 font-sans">+254 733 000 000</p>
+              <p className="text-gray-700 mb-2 font-sans">+254 795 111 917</p>
+              <p className="text-gray-700 font-sans">+254 115 273 066</p>
               <p className="text-gray-600 mt-2 text-sm font-sans">Available 24/7</p>
             </div>
 
@@ -55,7 +55,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-bold font-serif mb-3 text-amber-800">Visit Us</h3>
               <p className="text-gray-700 mb-2 font-sans">Nairobi, Kenya</p>
-              <p className="text-gray-700 font-sans">Moi Avenue, Downtown</p>
+              <p className="text-gray-700 font-sans">Seasons Road, Kasarani</p>
               <p className="text-gray-600 mt-2 text-sm font-sans">Office hours: 8am - 6pm</p>
             </div>
           </div>
