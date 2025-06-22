@@ -133,7 +133,15 @@ export default function ContactPage() {
 
               <div className="h-[400px] rounded-lg overflow-hidden mb-6 border-2 border-amber-100 bg-amber-50 shadow-sm">
                 <div className="w-full h-full flex items-center justify-center bg-amber-50">
-                  <p className="text-gray-600 font-sans">Google Map would be embedded here</p>
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3526.6665636171674!2d36.90123917436064!3d-1.2126290355487692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3e29a5bc355f%3A0x37a5547e48b24c2b!2sClayworks%20Towers%20-%20Kasarani!5e1!3m2!1sen!2ske!4v1747734502458!5m2!1sen!2ske" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }} 
+                    allowFullScreen={true}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </div>
               </div>
 
