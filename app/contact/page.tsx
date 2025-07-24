@@ -158,7 +158,7 @@ export default function ContactPage() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-700">Sunday:</span>
-                    <span className="font-medium">Closed</span>
+                    <span className="font-medium">Closed(Available on Call)</span>
                   </div>
                   <p className="text-amber-700 mt-2">* 24/7 phone support available for existing bookings</p>
                 </div>
