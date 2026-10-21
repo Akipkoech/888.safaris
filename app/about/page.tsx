@@ -45,13 +45,13 @@ export default function AboutPage() {
                 <MapPin className="w-8 h-8 text-amber-600" /> Our Story
               </h2>
               <p className="mb-4 text-gray-700 font-sans">
-                Founded with a passion for showcasing Kenya's breathtaking landscapes and rich culture, 888 Safaris has grown to become a leading provider of chauffeur-driven travel services in Kenya.
+                Founded with a passion for showcasing Kenya&apos;s breathtaking landscapes and rich culture, 888 Safaris has grown to become a leading provider of chauffeur-driven travel services in Kenya.
               </p>
               <p className="mb-4 text-gray-700 font-sans">
-                Our journey began with a simple mission: to offer travelers a safe, comfortable, and authentic way to experience Kenya's diverse attractions. Today, we pride ourselves on our fleet of well-maintained vehicles and our team of professional drivers who bring knowledge, experience, and a personal touch to every journey.
+                Our journey began with a simple mission: to offer travelers a safe, comfortable, and authentic way to experience Kenya&apos;s diverse attractions. Today, we pride ourselves on our fleet of well-maintained vehicles and our team of professional drivers who bring knowledge, experience, and a personal touch to every journey.
               </p>
               <p className="text-gray-700 font-sans">
-                At 888 Safaris, we believe that the journey is just as important as the destination. That's why we focus on creating memorable travel experiences that allow our clients to fully immerse themselves in Kenya's natural beauty and cultural heritage.
+                At 888 Safaris, we believe that the journey is just as important as the destination. That&apos;s why we focus on creating memorable travel experiences that allow our clients to fully immerse themselves in Kenya&apos;s natural beauty and cultural heritage.
               </p>
             </div>
           </div>
@@ -71,14 +71,14 @@ export default function AboutPage() {
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h3 className="text-2xl font-bold font-serif mb-4 text-amber-800">Our Mission</h3>
               <p className="text-gray-700 font-sans">
-                To provide exceptional chauffeur-driven travel services that exceed our clients' expectations, showcasing Kenya's beauty while ensuring safety, comfort, and personalized experiences for every traveler.
+                To provide exceptional chauffeur-driven travel services that exceed our clients&apos; expectations, showcasing Kenya&apos;s beauty while ensuring safety, comfort, and personalized experiences for every traveler.
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h3 className="text-2xl font-bold font-serif mb-4 text-amber-800">Our Vision</h3>
               <p className="text-gray-700 font-sans">
-                To be the most trusted and preferred chauffeur service in Kenya, known for our commitment to excellence, professionalism, and creating unforgettable travel experiences that connect people with Kenya's natural wonders and cultural heritage.
+                To be the most trusted and preferred chauffeur service in Kenya, known for our commitment to excellence, professionalism, and creating unforgettable travel experiences that connect people with Kenya&apos;s natural wonders and cultural heritage.
               </p>
             </div>
           </div>
@@ -150,7 +150,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold font-serif mb-1 text-amber-800">John Kamau</h3>
                 <p className="text-gray-600 mb-3 font-sans">Senior Safari Driver - 10 years experience</p>
                 <p className="text-gray-700 font-sans">
-                  John specializes in wildlife safaris and has extensive knowledge of Kenya's national parks and wildlife. Fluent in English, Swahili, and basic French.
+                  John specializes in wildlife safaris and has extensive knowledge of Kenya&apos;s national parks and wildlife. Fluent in English, Swahili, and basic French.
                 </p>
               </div>
             </div>
@@ -176,7 +176,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold font-serif mb-1 text-amber-800">Sarah Wanjiku</h3>
                 <p className="text-gray-600 mb-3 font-sans">Tour Driver - 7 years experience</p>
                 <p className="text-gray-700 font-sans">
-                  Sarah specializes in cultural tours and has deep knowledge of Kenya's diverse ethnic communities. Fluent in English, Swahili, and German.
+                  Sarah specializes in cultural tours and has deep knowledge of Kenya&apos;s diverse ethnic communities. Fluent in English, Swahili, and German.
                 </p>
               </div>
             </div>

@@ -56,7 +56,7 @@ export const metadata = {
               <div>
                 <h3 className="text-2xl font-bold font-serif mb-4 text-amber-800">Safari Vans</h3>
                 <p className="mb-6 text-gray-700 font-sans">
-                  Our safari vans are specially designed for comfortable travel across Kenya's diverse terrain and spacious interiors, these vehicles are perfect for small groups and families.
+                  Our safari vans are specially designed for comfortable travel across Kenya&apos;s diverse terrain and spacious interiors, these vehicles are perfect for small groups and families.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                   <div className="flex items-start gap-2">
@@ -429,7 +429,7 @@ export const metadata = {
               <div className="bg-white p-6 rounded-lg shadow-md transition-transform hover:scale-105">
                 <h3 className="text-xl font-bold font-serif mb-3 text-amber-800">Custom Group Tours</h3>
                 <p className="text-gray-700 mb-4 font-sans">
-                  Specialized tours for groups, including educational trips, team building events, and special interest tours across Kenya's diverse landscapes.
+                  Specialized tours for groups, including educational trips, team building events, and special interest tours across Kenya&apos;s diverse landscapes.
                 </p>
                 <Button asChild variant="outline" className="w-full border-amber-700 text-amber-700 hover:bg-amber-100 font-sans">
                   <Link href="/contact">Plan a Group Tour</Link>

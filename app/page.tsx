@@ -6,7 +6,7 @@ export const metadata = {
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { MapPin, Car, Star } from "lucide-react"
+import { MapPin, Star } from "lucide-react"
 import TestimonialSlider from "@/components/testimonial-slider"
 import DestinationGallery from "@/components/destination-gallery"
 
@@ -29,7 +29,7 @@ export default function Home() {
               Experience Kenya with Premium Chauffeur-Driven Safaris
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 font-sans font-medium leading-relaxed text-amber-100 animate-fadeIn animation-delay-200">
-              Tailored trips for all your needs—whether business or pleasure, we've got you covered with unmatched comfort and style.
+              Tailored trips for all your needs—whether business or pleasure, we&apos;ve got you covered with unmatched comfort and style.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fadeIn animation-delay-400">
               <Button 
@@ -60,10 +60,10 @@ export default function Home() {
                   Welcome to 888 Safaris
                 </h2>
                 <p className="mb-4 text-gray-700 font-sans">
-                  At 888 Safaris, we specialize in providing premium chauffeur-driven vehicle services across Kenya. Our fleet of well-maintained vehicles and team of highly experienced drivers ensure a comfortable, safe, and memorable journey through Kenya's breathtaking landscapes.
+                  At 888 Safaris, we specialize in providing premium chauffeur-driven vehicle services across Kenya. Our fleet of well-maintained vehicles and team of highly experienced drivers ensure a comfortable, safe, and memorable journey through Kenya&apos;s breathtaking landscapes.
                 </p>
                 <p className="mb-6 text-gray-700 font-sans">
-                  Whether you're planning a wildlife safari, a coastal retreat, or a business trip, our flexible booking options cater to your specific needs and preferences.
+                  Whether you&apos;re planning a wildlife safari, a coastal retreat, or a business trip, our flexible booking options cater to your specific needs and preferences.
                 </p>
                 <div className="flex flex-wrap gap-6 justify-center md:justify-start">
                   <div className="flex items-center gap-2">
@@ -187,7 +187,7 @@ export default function Home() {
                 <MapPin className="w-8 h-8 text-amber-600" /> Popular Destinations
               </h2>
               <p className="text-gray-700 font-sans">
-                Explore Kenya's most breathtaking locations with our chauffeur-driven tours.
+                Explore Kenya&apos;s most breathtaking locations with our chauffeur-driven tours.
               </p>
             </div>
 
@@ -210,7 +210,7 @@ export default function Home() {
               <div>
                 <h2 className="text-3xl font-bold font-serif mb-4 text-white">Ready to Explore Kenya?</h2>
                 <p className="mb-6 text-amber-100 font-sans">
-                  Contact us today to book your chauffeur-driven safari and experience Kenya's beauty with comfort and style.
+                  Contact us today to book your chauffeur-driven safari and experience Kenya&apos;s beauty with comfort and style.
                 </p>
                 <Button asChild size="lg" className="bg-amber-50 text-amber-900 font-bold hover:bg-amber-100 transition-all duration-300 rounded-md">
                   <Link href="/contact">Book Your Safari</Link>

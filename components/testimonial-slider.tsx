@@ -75,7 +75,7 @@ export default function TestimonialSlider() {
             className="opacity-100 transition-opacity duration-500"
           >
             <p className="text-gray-700 italic mb-8 text-xl font-sans">
-              "{testimonials[currentIndex].text}"
+              &quot;{testimonials[currentIndex].text}&quot;
             </p>
 
             <div className="flex items-center gap-4">
